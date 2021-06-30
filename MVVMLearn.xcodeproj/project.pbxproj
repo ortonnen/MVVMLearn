@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815DDD072689DB5A0084D882 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DDD062689DB5A0084D882 /* ShopList.swift */; };
+		815DDD09268A03210084D882 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DDD08268A03210084D882 /* ShoppingListViewController.swift */; };
+		815DDD0B268A04070084D882 /* AllShoppingListModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DDD0A268A04070084D882 /* AllShoppingListModelView.swift */; };
+		815DDD10268B1C4C0084D882 /* ShoppingListModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DDD0F268B1C4C0084D882 /* ShoppingListModelViewController.swift */; };
+		815DDD12268B2D2D0084D882 /* PassDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DDD11268B2D2D0084D882 /* PassDataProtocol.swift */; };
 		81CF616B2682010600778C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF616A2682010600778C96 /* AppDelegate.swift */; };
 		81CF616D2682010600778C96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF616C2682010600778C96 /* SceneDelegate.swift */; };
-		81CF616F2682010600778C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF616E2682010600778C96 /* ViewController.swift */; };
+		81CF616F2682010600778C96 /* AllShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF616E2682010600778C96 /* AllShoppingListViewController.swift */; };
 		81CF61722682010600778C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CF61702682010600778C96 /* Main.storyboard */; };
 		81CF61742682010800778C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CF61732682010800778C96 /* Assets.xcassets */; };
 		81CF61772682010800778C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CF61752682010800778C96 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		815DDD062689DB5A0084D882 /* ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
+		815DDD08268A03210084D882 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		815DDD0A268A04070084D882 /* AllShoppingListModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllShoppingListModelView.swift; sourceTree = "<group>"; };
+		815DDD0F268B1C4C0084D882 /* ShoppingListModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListModelViewController.swift; sourceTree = "<group>"; };
+		815DDD11268B2D2D0084D882 /* PassDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataProtocol.swift; sourceTree = "<group>"; };
 		81CF61672682010600778C96 /* MVVMLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CF616A2682010600778C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81CF616C2682010600778C96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		81CF616E2682010600778C96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81CF616E2682010600778C96 /* AllShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllShoppingListViewController.swift; sourceTree = "<group>"; };
 		81CF61712682010600778C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81CF61732682010800778C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81CF61762682010800778C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +47,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815DDD042689D91F0084D882 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81CF61702682010600778C96 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		815DDD052689D92A0084D882 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81CF616E2682010600778C96 /* AllShoppingListViewController.swift */,
+				815DDD08268A03210084D882 /* ShoppingListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		815DDD0C268B0ECD0084D882 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				815DDD11268B2D2D0084D882 /* PassDataProtocol.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		818FDD5926821B0F0051B930 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				815DDD062689DB5A0084D882 /* ShopList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		818FDD5A26821B150051B930 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				815DDD052689D92A0084D882 /* Controller */,
+				815DDD042689D91F0084D882 /* View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		818FDD5B26821B240051B930 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				815DDD0A268A04070084D882 /* AllShoppingListModelView.swift */,
+				815DDD0F268B1C4C0084D882 /* ShoppingListModelViewController.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
 		81CF615E2682010600778C96 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +119,12 @@
 			children = (
 				81CF616A2682010600778C96 /* AppDelegate.swift */,
 				81CF616C2682010600778C96 /* SceneDelegate.swift */,
-				81CF616E2682010600778C96 /* ViewController.swift */,
-				81CF61702682010600778C96 /* Main.storyboard */,
 				81CF61732682010800778C96 /* Assets.xcassets */,
 				81CF61752682010800778C96 /* LaunchScreen.storyboard */,
+				815DDD0C268B0ECD0084D882 /* Source */,
+				818FDD5926821B0F0051B930 /* Model */,
+				818FDD5B26821B240051B930 /* ModelView */,
+				818FDD5A26821B150051B930 /* View */,
 				81CF61782682010800778C96 /* Info.plist */,
 			);
 			path = MVVMLearn;
@@ -137,9 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CF616F2682010600778C96 /* ViewController.swift in Sources */,
+				81CF616F2682010600778C96 /* AllShoppingListViewController.swift in Sources */,
 				81CF616B2682010600778C96 /* AppDelegate.swift in Sources */,
+				815DDD0B268A04070084D882 /* AllShoppingListModelView.swift in Sources */,
+				815DDD09268A03210084D882 /* ShoppingListViewController.swift in Sources */,
+				815DDD12268B2D2D0084D882 /* PassDataProtocol.swift in Sources */,
+				815DDD10268B1C4C0084D882 /* ShoppingListModelViewController.swift in Sources */,
 				81CF616D2682010600778C96 /* SceneDelegate.swift in Sources */,
+				815DDD072689DB5A0084D882 /* ShopList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
