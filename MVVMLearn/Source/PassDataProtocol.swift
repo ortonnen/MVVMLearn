@@ -7,12 +7,6 @@
 
 import UIKit
 
-//MARK: Protocol
-protocol PassingDataDelegateProtocol: UIViewController {
-    func updateStringData(for String: String)
-}
-
-//MARK: Extension Protocol
-extension PassingDataDelegateProtocol {
-    func updateStringData(for String: String) {}
+protocol ​Coordinator {
+ ​func start()
 }
