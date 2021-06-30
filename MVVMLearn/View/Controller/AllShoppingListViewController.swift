@@ -10,17 +10,17 @@ import UIKit
 final class AllShoppingListViewController: UIViewController {
 
     var viewModel = AllShoppingListViewModel()
-    let vc = ShoppingListViewController()
+    
     
     @IBOutlet weak var shoppingListTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        shoppingListTableView.reloadData()
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        vc.viewModel.shopList.title = viewModel.shopList.title
-        print("VC1 \(viewModel.shopList.title)")
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        viewModel.updateView(for: shoppingListTableView)
     }
 
     @IBAction func createListeTappedButton(_ sender: Any) {
@@ -39,7 +39,11 @@ extension AllShoppingListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "shopCell", for: indexPath)
+        
+        cell.textLabel?.text = viewModel.shopList.title
+        
+        return cell
     }
     
     
