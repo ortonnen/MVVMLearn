@@ -13,7 +13,7 @@
             <objects>
                 <navigationController id="jov-Dl-Hml" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i0O-rS-Vrc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="106" width="320" height="374"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="4lm-FL-QNM" style="IBUITableViewCellStyleDefault" id="Q4m-iy-Jen">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopCell" textLabel="4lm-FL-QNM" style="IBUITableViewCellStyleDefault" id="Q4m-iy-Jen">
                                         <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q4m-iy-Jen" id="gCI-W9-gO5">
@@ -170,6 +170,9 @@
                                 <rect key="frame" x="12" y="434" width="296" height="30"/>
                                 <color key="backgroundColor" white="0.84999999999999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Save List"/>
+                                <connections>
+                                    <action selector="tappedSavedListButton:" destination="TEg-JU-lrn" eventType="touchUpInside" id="b6h-bA-uSZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zNm-NG-xnb"/>

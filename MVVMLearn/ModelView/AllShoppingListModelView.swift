@@ -10,10 +10,16 @@ import UIKit
 //MARK: - All Shopping List View Model
 final class AllShoppingListViewModel {
     //MARK: Properties
-    public let shopLists = [ShoppingList]()
+    public var shopLists = [ShoppingList]()
     public let shopList = ShoppingList()
     
+    let modelVC = ShoppingListViewModel()
+   
+    
     //MARK: Public Methods
+    public func updateView(for tableView: UITableView){
+        tableView.reloadData()
+    }
     
 }
 //MARK:- Alert

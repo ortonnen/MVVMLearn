@@ -13,11 +13,17 @@ final class ShoppingListViewModel {
     public let shopList = ShoppingList()
     public var itemsLists = [Item]()
     
+    
+    //MARK: Public Methods
+    public func savedList(){
+        shopList.items = itemsLists
+        shopList.title = "Shop"
+    }
 }
 //MARK:- Alert
 extension ShoppingListViewModel {
     
-    func addItem(_ title: String, _ message: String, _ buttonTitle: String, in tableView: UITableView) -> UIAlertController {
+    func addItemAlert(_ title: String, _ message: String, _ buttonTitle: String, in tableView: UITableView) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addTextField { (textfield) in
             textfield.placeholder = "Item"

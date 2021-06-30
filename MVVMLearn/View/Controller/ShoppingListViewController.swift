@@ -16,16 +16,18 @@ final class ShoppingListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("VC2 \(viewModel.shopList.title)")
         titleListLabel.text = viewModel.shopList.title
         itemTableView.reloadData()
     }
     
     @IBAction func tappedAddItemButton(_ sender: Any) {
-        self.present(viewModel.addItem("Add Item", "", "Add", in: itemTableView), animated: true, completion: nil)
-        print(viewModel.itemsLists)
+        self.present(viewModel.addItemAlert("Add Item", "", "Add", in: itemTableView), animated: true, completion: nil)
     }
     
+    @IBAction func tappedSavedListButton(_ sender: Any) {
+        viewModel.savedList()
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension ShoppingListViewController: UITableViewDelegate {
