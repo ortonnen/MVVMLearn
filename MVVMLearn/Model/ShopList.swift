@@ -6,20 +6,23 @@
 //
 
 import Foundation
-
+//MARK: - State Enum
 public enum State {
     case complete
     case inProgress
 }
 
-final class shoppingList {
-    
+//MARK: - Shopping List
+final class ShoppingList {
+    //MARK: Properties
     var title: String = ""
     var total: Int = 0
     var state: State = .inProgress
     var items = [Item]()
     
-    public func checkIfListIsComplete() -> Bool {
+    //MARK: Public Methods
+    ///check if shopping list is complete
+    public func checkIfListIsComplete(for shopList: ShoppingList) -> Bool {
         for item in items {
             if item.itemSate != .complete {
                 return false
@@ -27,11 +30,17 @@ final class shoppingList {
         }
         return true
     }
-    
 }
 
+//MARK: - Item
 final class Item {
-    var itemSate: State = .inProgress
-    var itemTitle: String = ""
-    var itemQuantity: Int = 0
+    var itemSate: State
+    var itemTitle: String
+    var itemQuantity: Int
+    
+    init(itemSate: State, itemTitle: String, itemQuantity: Int) {
+        self.itemSate = itemSate
+        self.itemTitle = itemTitle
+        self.itemQuantity = itemQuantity
+    }
 }
